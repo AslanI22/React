@@ -1,11 +1,34 @@
 import React from 'react';
 
 function App() {
-  return <ul>
-    <li>text1</li>
-    <li>text2</li>
-    <li>text3</li>
-  </ul>;
+  return <div>
+    <ul>
+      <li>text1</li>
+      <li>text2</li>
+      <li>text3</li>
+    </ul>
+    <ul>
+      <li>text1</li>
+      <li>text2</li>
+      <li>text3</li>
+    </ul>
+  </div>;
 }
 
+// function App() {
+//   return (
+//     <>
+//       <ul>
+//         <li>text1</li>
+//         <li>text2</li>
+//         <li>text3</li>
+//       </ul>
+//       <ul>
+//         <li>text1</li>
+//         <li>text2</li>
+//         <li>text3</li>
+//       </ul>
+//     </>
+//   )
+// }
 export default App;
