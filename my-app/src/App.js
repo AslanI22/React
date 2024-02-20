@@ -1,8 +1,8 @@
 import React from 'react';
 
 function App() {
-  const isAuth = true;
-  if (isAuth) {
+  const isAuth = false;
+  if (isAuth == false) {
     return <div>
       <p>вы авторизованы</p>
     </div>;
