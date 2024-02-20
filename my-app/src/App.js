@@ -1,14 +1,15 @@
 import React from 'react';
 
 function App() {
-  const isAdmin = true;
-  let content = null;
-  if (isAdmin) {
-    content = <div><p>text1</p></div>;
+  const age = 19;
+  let text;
+  if (age > 18) {
+    text = <p>text1</p>;
   }
-
-  return content;
-
+  else {
+    text = <p>text</p>;
+  }
+  return text;
 }
 
 export default App;
