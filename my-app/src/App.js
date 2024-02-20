@@ -1,26 +1,19 @@
 import React from 'react';
 
 function App() {
-  const num1 = 3;
-  const num2 = 2;
+  const isAdult = true;
+
+  if (isAdult) {
+    isAdult = <p>text1</p>;
+  }
+  else {
+    isAdult = <p>text2</p>;
+  }
 
   return <div>
-    result: {num1 ** num2}
+    {isAdult}
   </div>;
+
 }
-// function App() {
-//   const name = 'john';
-//   const surname = 'smit';
 
-//   return <div>
-//     result: {name + ' ' + surname}
-//   </div>;
-// }
-// function App() {
-// 	const num = 4;
-
-// 	return <div>
-// 		result: {Math.sqrt(num)}
-// 	</div>;
-// }
 export default App;
