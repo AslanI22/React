@@ -1,14 +1,17 @@
 import React from 'react';
 
 function App() {
-  function func(arg, event, arg1) {
-    console.log(arg, event, arg1);
-  }
+  const arr = [
+    <li>1</li>,
+    <li>2</li>,
+    <li>3</li>,
+    <li>4</li>,
+    <li>5</li>,
+  ];
 
-  return <div>
-    <button onClick={event => func('eee',
-      event)}>act</button>
-  </div>;
+  return <ul>
+    {arr}
+  </ul>;
 }
 
 export default App;
