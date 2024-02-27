@@ -1,22 +1,21 @@
 import React from 'react';
 
-const users = [
-  { name: 'user1', surn: 'surn1', age: 30 },
-  { name: 'user2', surn: 'surn2', age: 31 },
-  { name: 'user3', surn: 'surn3', age: 32 },
+const prods = [
+  { id: 1, name: 'product1', cost: 100 },
+  { id: 2, name: 'product2', cost: 200 },
+  { id: 3, name: 'product3', cost: 300 },
 ];
 
 function App() {
-  const res = users.map(function (item, index) {
-    return <p key={index}>
+  const res = prods.map(function (item) {
+    return <p key={item.id}>
       <span>{item.name}</span>:
-      <span>{item.surn}</span>:
-      <span>{item.age}</span>
+      <span>{item.cost}</span>
     </p>;
   });
 
-  return <ul>
+  return <div>
     {res}
-  </ul>;
+  </div>;
 }
 export default App;
