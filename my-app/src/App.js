@@ -1,21 +1,31 @@
 import React from 'react';
 
-const prods = [
-  { id: 1, name: 'product1', cost: 100 },
-  { id: 2, name: 'product2', cost: 200 },
-  { id: 3, name: 'product3', cost: 300 },
+const users = [
+  { id: 1, name: 'user1', surn: 'surn1', age: 30 },
+  { id: 2, name: 'user2', surn: 'surn2', age: 31 },
+  { id: 3, name: 'user3', surn: 'surn3', age: 32 },
 ];
 
 function App() {
-  const res = prods.map(function (item) {
-    return <p key={item.id}>
-      <span>{item.name}</span>:
-      <span>{item.cost}</span>
-    </p>;
+  const rows = users.map(function (item) {
+    return <tr key={item.id}>
+      <td>{item.name}</td>
+      <td>{item.surn}</td>
+      <td>{item.age}</td>
+    </tr>;
   });
 
-  return <div>
-    {res}
-  </div>;
+  return <table>
+    <thead>
+      <tr>
+        <td>имя</td>
+        <td>фамилия</td>
+        <td>возраст</td>
+      </tr>
+    </thead>
+    <tbody>
+      {rows}
+    </tbody>
+  </table>;
 }
 export default App;
