@@ -1,14 +1,13 @@
 import React from 'react';
 
 function App() {
-  function showMess(text) {
-    alert(text);
+  function func(event) {
+    event = 10;
+    console.log(event); // объект с событием
   }
 
   return <div>
-    <button onClick={() => showMess('1')}>show1</button>
-    <button onClick={() => showMess('2')}>show2</button>
-    <button onClick={() => showMess('3')}>show2</button>
+    <button onClick={func}>act</button>
   </div>;
 }
 
