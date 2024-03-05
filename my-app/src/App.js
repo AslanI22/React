@@ -1,10 +1,12 @@
 import React from 'react';
-import { nanoid } from 'nanoid';
+import { nanoid } from 'nanoid'
+import uuid from 'react-uuid';
 
 function App() {
   function id() {
     const x = nanoid();
-    return x
+    const y = uuid();
+    return x, y
   }
   return (
     id()
