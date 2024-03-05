@@ -1,20 +1,26 @@
-import React from 'react';
-import { nanoid } from 'nanoid'
-import uuid from 'react-uuid';
+import React, { useState } from 'react';
 
-const prods = [
-  { id: id(), name: 'product1', cost: 100 },
-  { id: id(), name: 'product2', cost: 200 },
-  { id: id(), name: 'product3', cost: 300 },
-];
-
-
-function id() {
-  let x = nanoid();
-  return x
-}
 function App() {
+  const [firstName, setFirstName] = useState('John');
+  const [lastName, setLastName] = useState('Doe');
+  const [age, setAge] = useState(30);
 
+  return (
+    <div>
+      <div>
+        <label>Имя: </label>
+        <span>{firstName}</span>
+      </div>
+      <div>
+        <label>Фамилия: </label>
+        <span>{lastName}</span>
+      </div>
+      <div>
+        <label>Возраст: </label>
+        <span>{age}</span>
+      </div>
+    </div>
+  );
 }
 
 export default App;
